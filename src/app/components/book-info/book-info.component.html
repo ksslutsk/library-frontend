@@ -1,0 +1,24 @@
+<div class="container column">
+    <div class="container row border-bottom">
+        <h3 class="card-title">Details</h3>
+        <button (click)="close()"><mat-icon>close</mat-icon></button>
+    </div>
+    <div class="container row border-bottom">
+        <div class="container column left-part">
+            <img src="{{book?.cover}}"/>
+            <div class="container row space-between">
+                <label>Rating: {{book?.rating}}</label>
+                <label>Reviews: {{book?.reviews?.length}}</label>
+            </div>
+        </div>
+        <div class="container column">
+            <h3 class="title">{{book?.title}}</h3>
+            <label class="lab-book-info">{{book?.author}}, {{book?.genre}}</label>
+            <p class="content">{{book?.content}}</p>
+        </div>
+    </div>
+    <div *ngFor="let review of book?.reviews" class="container column border-bottom">
+        <h3 class="title">{{review.reviewer}}</h3>
+        <p>{{review.message}}</p>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+.border-bottom{
+    border-bottom: 1px solid #ccc;
+}
+img {
+    width: 200px; 
+}
+.card-title {
+    margin: 0;
+    flex-grow: 3;
+    text-align: center;
+}
+button {
+    border: none;
+    align-self: flex-end;
+    padding: 0;
+}
+.left-part {
+    width: auto;
+}
+.title{
+    margin-top: 0;
+    height: min-content;
+    font-size: 1.3em;
+}
+.lab-book-info {
+    font-size: 1.2em;
+}
+p {
+    font-size: 1.25em;
+}

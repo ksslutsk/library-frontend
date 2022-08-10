@@ -1,0 +1,22 @@
+app-book-list-item {
+    width: 48%;
+}
+.tabs {
+    padding: 0 1rem;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.no-data {
+    height: 20vh;
+    background-color: #c45a47;
+    width: 100%;
+    color: antiquewhite;
+    font-size: 3em;
+    
+    h3{
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+    }
+}

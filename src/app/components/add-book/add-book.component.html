@@ -1,0 +1,34 @@
+<div class="continer column border">
+    <h2>Add book</h2>
+    <form [formGroup]="addBookForm">
+        <div class="container row">
+            <div class="container column left-part">
+                <div class="row form-input">
+                    <label for="title">Title:</label>
+                    <input id="title" type="text" formControlName="title">
+                </div>
+                <div class="row form-input">
+                    <label for="cover">Cover:</label>
+                    <input id="cover" type="file" formControlName="cover" (change)="fileUpload($event.target)">
+                </div>
+                <div class="row form-input">
+                    <label for="genre">Genre:</label>
+                    <input id="genre" type="text" formControlName="genre">
+                </div>
+                <div class="row form-input">
+                    <label for="author">Author:</label>
+                    <input id="author" type="text" formControlName="author">
+                </div>
+            </div>
+            <div class="container row right-part">
+                <label for="content">Content:</label>
+                <textarea id="content" formControlName="content"></textarea>
+            </div>
+        </div>
+    </form>
+    <div class="container row center">
+        <button mat-flat-button color="primary" (click)="addBook()">Add</button>
+        <button mat-flat-button color="accent" (click)="clearForm()">Clear</button>
+    </div>
+
+</div>

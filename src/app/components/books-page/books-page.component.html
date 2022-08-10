@@ -1,0 +1,12 @@
+<div class="container column no-x-padd">
+    <div class="cotainer row tabs">
+        <button mat-stroked-button (click)="getAllBooks()">All</button>
+        <button mat-stroked-button  (click)="getRecomedations()">Racomendations</button>
+    </div>
+    <div class="container row border space-between wrap ">
+        <div *ngIf="books.length == 0" class="no-data">
+            <h3>No data yet</h3>
+        </div>
+        <app-book-list-item *ngFor="let book of books" [book]="book"></app-book-list-item>
+    </div>
+</div>
